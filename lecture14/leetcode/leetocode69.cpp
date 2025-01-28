@@ -20,9 +20,19 @@ int findsqrt(int number){
     return high;
         
 }
+
+float getFloat(int sqrt){
+    cout<<"hello world "<<endl;
+    return 0.2;
+}
+
+
 int main(){
-    int number=37;
+    int number=10;
     int sqrt=findsqrt(number);
     cout<<sqrt<<endl;
+    // now the float part   
+    float num=getFloat(sqrt);
+
     return 0;
 }
