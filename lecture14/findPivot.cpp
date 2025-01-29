@@ -14,27 +14,24 @@ using namespace std;
 
 int findPivotIndex(vector<int> arr){
     // cout<<"helloo owrld";
-    int low = 0,high=arr.size()-1;
-    while (low<high)
-    {
-        int mid = low+(high-low)/2;
-        if(arr[mid]>arr[low]){
-            low=mid;
-        }else{
-            high = mid;
+    int low = 0,high=arr.size()-1,mid;
+    while (low<high){
+        mid=low + (high-low)/2;
+        if(arr[mid+1]>arr[mid]){
+            return mid;
         }
-
+        else if( arr[0]> arr[mid]){
+            high = mid;
+        }else{
+            low= mid + 1 ;
+        }
     }
-    if(arr[low]>arr[low+1]){
-        return low+1;
-    }else{
-        return -1;
-    }
+    
     
     // return index;
 }
 int main(){
-    vector<int> arr={6, 7, 8, 1, 2, 3, 4, 5};
+    vector<int> arr={4,5,6,7,0,1,2};
     int index=findPivotIndex(arr);
     cout<<index;
     return 0;

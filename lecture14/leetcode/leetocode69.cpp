@@ -21,8 +21,20 @@ int findsqrt(int number){
         
 }
 
-float getFloat(int sqrt){
-    cout<<"hello world "<<endl;
+double getFloat(int sqrt){
+    // float nua = (float) sqrt+0.1;
+    // cout<<nua<<endl;
+    double high = sqrt+1 , low = sqrt;
+    double mid = low + (high - low)/2;
+    cout<<mid<<endl;
+    double sqr = mid*mid;
+    while (mid)
+    {
+        /* code */
+    }
+    
+
+    
     return 0.2;
 }
 
@@ -32,7 +44,7 @@ int main(){
     int sqrt=findsqrt(number);
     cout<<sqrt<<endl;
     // now the float part   
-    float num=getFloat(sqrt);
+    double num=getFloat(sqrt);
 
     return 0;
 }
