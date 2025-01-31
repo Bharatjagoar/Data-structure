@@ -6,23 +6,16 @@ using namespace std;
 
 
 void insertionSort(vector <int> &arr,int size){
-    cout<<endl;
-    for (int i = 0; i < size; i++)
-    {
-        int temp = arr[i];
-        for (int j = i-1; j > -1; j--)
-        {
-            
-            if(arr[j]>temp){
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-            }else{
-                break;
+    cout<<endl; 
+    for(int i = 1; i < arr.size();i++){
+        // cout<<arr[i]<<" ";
+        for(int j = i ;j>0 ;j--){
+            if(arr[j]<arr[j-1]){
+                swap(arr[j],arr[j-1]);
             }
         }
-        
     }
-    
+    cout<<endl;
 }
 
 int main(){
