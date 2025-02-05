@@ -2,7 +2,7 @@
 using namespace std;
 #include <bits/stdc++.h>
 
-she's also
+// she's also
 void mergeSortedarray(vector<int> &arr1, int m, vector<int> &arr2, int n)
 {
     if (m == 0 && n > 0)
