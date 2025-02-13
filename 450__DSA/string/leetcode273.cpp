@@ -25,31 +25,31 @@ string getOnesDigit(int a)
         return "";
         break;
     case 1:
-        return "One";
+        return "One ";
         break;
     case 3:
-        return "Three";
+        return "Three ";
         break;
     case 4:
-        return "Four";
+        return "Four ";
         break;
     case 2:
-        return "Two";
+        return "Two ";
         break;
     case 5:
-        return "Five";
+        return "Five ";
         break;
     case 6:
-        return "Six";
+        return "Six ";
         break;
     case 7:
-        return "Seven";
+        return "Seven ";
         break;
     case 8:
-        return "Eight";
+        return "Eight ";
         break;
     case 9:
-        return "Nine";
+        return "Nine ";
         break;
     default:
         break;
@@ -59,7 +59,7 @@ string getOnesDigit(int a)
 
 string helper(int a, int b)
 {
-    cout << a << b << endl;
+
     switch (b)
     {
     case 1:
@@ -103,28 +103,28 @@ string helper(int a, int b)
         return getOnesDigit(a);
         break;
     case 2:
-        return "Twenty " + getOnesDigit(a);
+        return "Twenty ";
         break;
     case 3:
-        return "Thirty " + getOnesDigit(a);
+        return "Thirty ";
         break;
     case 4:
-        return "Forty " + getOnesDigit(a);
+        return "Forty ";
         break;
     case 5:
-        return "Fifty " + getOnesDigit(a);
+        return "Fifty ";
         break;
     case 6:
-        return "Sixty " + getOnesDigit(a);
+        return "Sixty ";
         break;
     case 7:
-        return "Seventy " + getOnesDigit(a);
+        return "Seventy ";
         break;
     case 8:
-        return "Eighty " + getOnesDigit(a);
+        return "Eighty ";
         break;
     case 9:
-        return "Ninety " + getOnesDigit(a);
+        return "Ninety ";
         break;
     default:
         break;
@@ -140,13 +140,13 @@ string getPlaceValue(int a)
         return "";
         break;
     case 2:
-        return " Thousand ";
+        return "Thousand ";
         break;
     case 3:
-        return " Million ";
+        return "Million ";
         break;
     case 4:
-        return " Billion ";
+        return "Billion ";
         break;
     default:
         break;
@@ -154,93 +154,96 @@ string getPlaceValue(int a)
     return "";
 }
 
-string In_words(int number)
+string In_words(int a)
 {
-    // 456
-
-    vector<int> num;
-    while (number != 0)
+    if (a == 0)
     {
-        num.push_back(number % 10);
-        number /= 10;
+        return "Zero";
     }
-    if (num.size() <= 2)
+    string final = "", ans = "";
+    vector<int> number;
+    while (a != 0)
     {
-        if (num.size() == 2)
-            return helper(num[0], num[1]);
-        else
-        {
-            return getOnesDigit(num[0]);
-        }
+        number.push_back(a % 10);
+        a = a / 10;
     }
-    int indecies = (num.size() - 1) / 3;
+    int size = number.size();
+    int j = 0, placevalue = 1;
 
-    int count = 0, placevaluecount = 0;
-    string ans = "", final = "";
-    for (int i = 0; i < num.size(); i++)
+    while (j + 2 < number.size())
     {
 
-        count++;
-        if (count == 1)
+        for (int i = 0; i < 3; i++)
         {
-            placevaluecount++;
-            if (i + 1 == num.size())
+            cout << number[i + j];
+            if (i == 0)
             {
-                ans = getOnesDigit(num[i]) +
-                      getPlaceValue(placevaluecount) + final;
-                final = ans;
-            }
-        }
-        if (count == 2)
-        {
-            ans = helper(num[i - 1], num[i]);
-            if (i + 1 == num.size())
-            {
-                final = ans + getPlaceValue(placevaluecount) + final;
-            }
-            // cout << ans << endl;
-            // count=0;
-        }
-        if (count == 3)
-        {
-
-            // yaha pe swtich case lagega i mean million trillion wala;
-
-            // cout<<num[i]<<endl;
-            cout <<"fdsa:: "<< ans << endl;
-            if (ans == "" && num[i] == 0)
-            {
-                ans = getOnesDigit(num[i]) + ans + "" +
-                      getPlaceValue(placevaluecount);
-            }
-            else
-            {
-                if (num[i] != 0)
+                if (number[j + i] != 0)
                 {
-                    
-                    ans = getOnesDigit(num[i]) + " Hundred " + ans + "" + getPlaceValue(placevaluecount);
-                    final = ans + final;
-                }else{
-                    cout<<"hello"<<ans<<":FDSA"<<endl;
-                    ans = getOnesDigit(num[i]) + ans + "" + getPlaceValue(placevaluecount);
+                    ans = getOnesDigit(number[i + j]);
+                    final = ans + getPlaceValue(placevalue) + final;
+                }
+            }
+            if (i == 1)
+            {
+                if (number[j + i] != 0)
+                {
+                    if (number[i] == 1)
+                        final = "";
+                    ans = helper(number[(j + i) - 1], number[j + i]);
                     final = ans + final;
                 }
             }
-
-            // final+=ans;
-            cout << ans << endl;
-            count = 0;
+            if (i == 2)
+            {
+                if (number[j + i] != 0)
+                {
+                    ans = getOnesDigit(number[i + j]) + "Hundred ";
+                    final = ans + final;
+                }
+                placevalue++;
+            }
+            cout << i + j << " ------------------ " << placevalue << endl;
         }
-        // cout << num[i] << " ";
+
+        j += 3;
     }
-    // cout<<final<<endl;
+    cout << final << "\t" << j << endl;
+    for (int i = 0; i + j < number.size(); i++)
+    {
+        if (i == 0)
+        {
+            if (number[j + i] != 0)
+            {
+                ans = getOnesDigit(number[i + j]);
+                final = ans + getPlaceValue(placevalue) + final;
+            }
+        }
+        if (i == 1)
+        {
+            if (number[j + i] != 0)
+            {
+                if (number[i] == 1)
+                    ans = "";
+                ans = helper(number[(j + i) - 1], number[j + i]);
+                final = ans + final;
+            }
+        }
+    }
+
+    // cout<<number[j]<<endl;
+    size = final.length();
+    while (final[size - 1] == ' ')
+    {
+        final.resize(final.size() - 1);
+    }
     return final;
 }
 int main()
 {
     // cout << "hello world" << endl;
 
-    cout << In_words(20020073) << endl;
+    cout << In_words(21021011) << endl;
 
     return 0;
 }
