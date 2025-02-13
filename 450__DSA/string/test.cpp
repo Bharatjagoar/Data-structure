@@ -4,11 +4,11 @@ using namespace std;
 int main(){
  
  
-    for (int i = 0; i < 5; ++i)
-    {
-        cout<<i<<endl;
+    int number = 0;
+    string name="bharat";
+    string ans ="";
+    if(ans==""){
+        cout<<"fdsa"<<endl;
     }
-    
- 
     return 0 ;
 }
