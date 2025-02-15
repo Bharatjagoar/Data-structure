@@ -165,33 +165,60 @@ string In_words(int a)
     while (a != 0)
     {
         number.push_back(a % 10);
+        cout<<a%10<<" ";
         a = a / 10;
     }
+    cout<<endl;
     int size = number.size();
     int j = 0, placevalue = 1;
 
     while (j + 2 < number.size())
     {
-
+        int countZero = 0;
         for (int i = 0; i < 3; i++)
         {
-            cout << number[i + j];
+            int len = 0;
+            cout<<"number @ ith ::" << number[i + j]<<"\t"<<countZero<<endl;
             if (i == 0)
             {
-                if (number[j + i] != 0)
+                
+                if ((number[j + i] != 0))
                 {
+                    
                     ans = getOnesDigit(number[i + j]);
+                    len = ans.length();
+                    cout<<"AAAAAAAAAAAAAAAAAAAAAAAA         "<<len<<ans<<endl;
+                    int temp = getPlaceValue(placevalue).length();
+                    cout<<getPlaceValue(placevalue)<<temp<<endl;
                     final = ans + getPlaceValue(placevalue) + final;
+                }else{
+                    countZero++;
+                    ans = "";
+                    final = getPlaceValue(placevalue) + final;
                 }
             }
             if (i == 1)
             {
                 if (number[j + i] != 0)
                 {
-                    if (number[i] == 1)
-                        final = "";
-                    ans = helper(number[(j + i) - 1], number[j + i]);
-                    final = ans + final;
+                    if (number[i+j] == 1){
+
+                        // ans = "";
+                        cout<<ans.length()<< "       "<<final <<"Jagoar Jagoar Jagoar   "<<ans<<endl;
+                        final.erase(0,ans.length());
+
+                        ans = helper(number[(j + i) - 1], number[j + i]);
+                        final = ans + " " + final;
+                    }else{
+                        cout<<"AAAAAAAAAAAAAAAAAAAAAAAA   "<<i+j<<endl;
+                        cout<<len<<endl;
+                        final.erase(0,len);
+                        ans = helper(number[(j + i) - 1], number[j + i]);
+                        final = ans + final;
+                    }    
+                    
+                }else{
+                    countZero++;
                 }
             }
             if (i == 2)
@@ -200,33 +227,59 @@ string In_words(int a)
                 {
                     ans = getOnesDigit(number[i + j]) + "Hundred ";
                     final = ans + final;
+                }else{
+                    countZero++;
+                    cout<<"kumar"<<endl;
+                    if(countZero==3){
+                        int temp = getPlaceValue(placevalue).length();
+                        final.erase(0,temp);
+                    }
                 }
                 placevalue++;
             }
-            cout << i + j << " ------------------ " << placevalue << endl;
+            cout << i + j << " ------------------ " << final << endl;
         }
 
         j += 3;
     }
-    cout << final << "\t" << j << endl;
+    cout << final<<" bharat "  << getPlaceValue(placevalue) << endl;
+
     for (int i = 0; i + j < number.size(); i++)
     {
+        int length = 0;
         if (i == 0)
         {
-            if (number[j + i] != 0)
+            if (number[j + i] != 0 )
             {
                 ans = getOnesDigit(number[i + j]);
+                length = ans.length();
                 final = ans + getPlaceValue(placevalue) + final;
+                
+            }else{
+                final = getPlaceValue(placevalue) + final;
             }
         }
         if (i == 1)
         {
             if (number[j + i] != 0)
             {
-                if (number[i] == 1)
-                    ans = "";
-                ans = helper(number[(j + i) - 1], number[j + i]);
-                final = ans + final;
+                cout<<"fdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa"<<final<<endl;
+                if (number[i+j] == 1){
+                    // final.erase(0,length);
+                    final==""?cout<<"hello from bharat "<<endl:cout<<"bye"<<endl;
+                    if(final == ""){
+                        final = getPlaceValue(placevalue);
+                    }
+                    final.erase(0,ans.length());
+                    ans = helper(number[(j + i) - 1], number[j + i]);
+                    final = ans +" "+ final;
+                }else{
+                    
+                    ans = helper(number[(j + i) - 1], number[j + i]);
+                    final = ans + final;
+                }
+                    
+                
             }
         }
     }
@@ -243,7 +296,9 @@ int main()
 {
     // cout << "hello world" << endl;
 
-    cout << In_words(21021011) << endl;
+    cout << In_words(1010101) << endl;
 
     return 0;
 }
+// 11811911
+// 11011081

@@ -7,6 +7,7 @@ int main(){
     int number = 0;
     string name="bharat";
     string ans ="";
-    cout<<"bharat"+ans+"jagpar"<<endl;
+    name.erase(0,4);
+    cout<<name<<endl;
     return 0 ;
 }
