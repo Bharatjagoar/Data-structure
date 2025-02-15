@@ -8,6 +8,7 @@
         "vector": "cpp",
         "array": "cpp",
         "forward_list": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "functional": "cpp"
     }
 }
