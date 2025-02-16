@@ -2,80 +2,94 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ham yaha two pointer se questtion solve karenge ,
-// both will be at zero . j will move when detecting same character windows , i will jump to j when different character is detected.
+
+// i need I variable to so that i can count the distance or total number count of that GRP
+// i need a variable named pos so that we can enter new charter info there
 
 
 
 
-
-
-int GetTheLength(vector<char> chars)
-{
-    int i = 0, j = 1;
+int GetTheLength(vector<char>& chars) {
+    for (int i = 0; i < chars.size(); i++)
+    {
+        /* code */
+        cout<<chars[i]<< " ";
+    }
+    cout<<endl;
+    int i = 0, j = 1,size = chars.size(), InsertionPos = 0 , count = 1;
     char ch = chars[0];
+    for(int j = 1 ; j < size ; j++){
 
-    int indexStored = 0;
-    if (chars.size() == 1)
-        return 1;
-    while (j < chars.size())
-    {
-        
-        if (chars[j] != ch)
-        {
-            int count = j - i;
-            if(count==1){
-                chars[i] = ch;
-                indexStored=i+1;
-                ch = chars[j];
-                i = j;
-                j++;
-                continue;
-            }
-            
-
-
-            chars[i] = ch;
-            i++;
-            int place = 0;
-            while (to_string(count).length() > place)
-            {
-                chars[place + i] = to_string(count)[place];
-                place++;
-            }
-
-            indexStored = place + i;
-
+        if(chars[j]!=ch){
+            // cout<<"j :: "<<j<<endl;
+            count = j-i;
+            cout<<"count is :: "<<count<<endl;
+            chars[InsertionPos] = chars[j-1];
             ch = chars[j];
-            i = j;
+            if(count>1){
+                // cout<<"yes"<<InsertionPos<<endl;
+                string countString = to_string(count);
+                // cout<<countString<<endl;
+                
+                cout<<InsertionPos <<endl;
+                InsertionPos++;
+                int k = 0;
+                // problem yha hai
+                cout<<InsertionPos<<endl;
+                while (countString.length()>k)
+                {
+                    // cout<<k+InsertionPos<<endl;
+
+                    chars[InsertionPos]=countString[k];
+                    InsertionPos++;
+                    k++;
+                }
+                // cout<<InsertionPos+ k + 1<<endl;
+                // InsertionPos = InsertionPos+ k ;
+                i=j;
+                // cout<<count<<endl;
+            }else{
+                //if count is 1 the there is no need to append the count in front
+                // cout<<"hfdlsa"<<InsertionPos<< chars[j-1]<<endl;
+                
+                InsertionPos++;
+                i=j;
+            }
+            count = 1;
+        }else{
+            count++;
         }
-
-        j++;
+        cout<<ch<< " ";
     }
-    int count = j - i;
-    
-    i= indexStored;
-    chars[i] = ch;
-    i++;
-    int place = 0;
-    while (to_string(count).length() > place)
+    cout<<endl<<chars.size()<<" "<<j;
+    cout<<endl<<i<<endl<<InsertionPos<<endl;
+    count = chars.size() - i;
+    cout<<ch<<"   " << "bharat"<<endl;
+    chars[InsertionPos]=ch;
+    if(count == 1 ){
+        chars.resize(InsertionPos+1);
+    }
+    else if(count<10){
+        chars[++InsertionPos] = to_string(count)[0];
+        chars.resize(InsertionPos+1);
+    }else{
+        int k = 0 ;
+        string countString = to_string(count);
+        cout<<"count string :: "<<countString[1]<<"    "<< InsertionPos<<endl; 
+        while (k<countString.length())
+        {
+            chars[++InsertionPos] = countString[k];
+            k++;
+        }
+        chars.resize(InsertionPos+1);
+    }
+    for (int i = 0; i < chars.size(); i++)
     {
-        chars[place + i] = to_string(count)[place];
-        place++;
-    }
-    
-    
-    place = indexStored+to_string(count).length();
-    cout<<place <<endl;
-    
-    int last =chars.size()-1;
-    chars.resize(place+1);
-    
-    
-    for(auto x : chars){
-        cout<<x<<" ";
-    }
+        /* code */
 
+        cout<<chars[i]<< " ";
+    }
+    cout<<endl<<InsertionPos<<endl;
 
     return (int) chars.size();
 }
@@ -83,7 +97,7 @@ int GetTheLength(vector<char> chars)
 int main()
 {
 
-    vector<char> chars = {'a','a','a','b','b','a','a'};
+    vector<char> chars = {'a'};
 
     cout<<endl<<GetTheLength(chars)<<endl;
     return 0;
