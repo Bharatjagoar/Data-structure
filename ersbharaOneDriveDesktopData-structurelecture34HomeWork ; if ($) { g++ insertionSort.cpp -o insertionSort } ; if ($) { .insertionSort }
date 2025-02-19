@@ -1,0 +1,606 @@
+[33mcommit 2bbe19bb43c6ad3f8ed597686661ed307b766b25[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Feb 19 10:19:02 2025 +0530
+
+    lecture 34
+
+[33mcommit 53ddf204018679604a09c3a9bf187448f081f14e[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 18 18:38:02 2025 +0530
+
+    Binary Palindrome using recursion
+
+[33mcommit 5fca7876aa506937cda69659c6048ad4c513fdab[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 18 10:09:49 2025 +0530
+
+    searching with Recursion
+
+[33mcommit 29cc027c0af25d7c2a6172e1148c5a39a41b922c[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 17 20:59:30 2025 +0530
+
+    say the count
+
+[33mcommit bd26a65cac3138a1257cabb1733ac4afe47274e1[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 17 13:44:13 2025 +0530
+
+    509
+
+[33mcommit e66b54796ee3f175f7daf6ae15b4755a7bd2d226[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 17 11:18:34 2025 +0530
+
+    Intro To Recursion
+
+[33mcommit 1e4eab03058afb46d9ea2d142c38db8db9a23373[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 17 06:49:01 2025 +0530
+
+    Inline macros Global variable
+
+[33mcommit 1ed8875bcc140f46e8f4458899f45284f8bd6261[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sun Feb 16 23:05:57 2025 +0530
+
+    2D array Dynamic memory allocation
+
+[33mcommit 61716a13be63e74f4c31e49d6410138a74e63e05[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sun Feb 16 15:04:44 2025 +0530
+
+    443
+
+[33mcommit 022c60eadd5032afe74ec4135a343e5848e2f1be[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 15 22:17:00 2025 +0530
+
+    dynamic memory allocation !!
+
+[33mcommit c0335c0938e65954b557b6bb0f4399554a21a3a6[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 15 19:50:46 2025 +0530
+
+    pointer c++
+
+[33mcommit 37fb3672373fa45041a3d4594db7cb0db3ebd933[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 15 11:57:08 2025 +0530
+
+    kardia bhenchod !!!!!! 273 DONE
+
+[33mcommit bf571175a765ffef00afc25a910eb0fbeb7b754e[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Feb 13 17:07:16 2025 +0530
+
+    expo
+
+[33mcommit 54473c641c1419e82309870d9198c0f9e73c78df[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Feb 13 09:48:43 2025 +0530
+
+    partial 273
+
+[33mcommit fdabad1d317f3b61ac0494fc4fb5b024f4bb29b6[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 11 20:52:40 2025 +0530
+
+     204
+
+[33mcommit a56f8962f848fd1649556de519c7e4cb7b623f1b[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 11 17:22:17 2025 +0530
+
+    240
+
+[33mcommit 67d19adb66bd68ef8ca4b3f3d151e7bed9d12caf[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 11 12:31:26 2025 +0530
+
+    74
+
+[33mcommit 7a3c0021e8a8eaaa035511f7568933529f01f4ff[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Feb 11 11:17:51 2025 +0530
+
+    54
+
+[33mcommit 2a10f28924aa00e7f342cddda2006f5533e74dce[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 10 15:58:42 2025 +0530
+
+    Wavy
+
+[33mcommit 6b993a70f15bfec50485abb8ba77677e64ac5b66[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 10 10:55:30 2025 +0530
+
+    28
+
+[33mcommit 3102e79c9a7ad0dfbad51fa9bf8e8362f735c109[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 8 16:32:36 2025 +0530
+
+    1047
+
+[33mcommit 9f72d1e651e75c8e96f3fff86ca528f5079f2b1d[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 8 12:56:41 2025 +0530
+
+    567
+
+[33mcommit 59fd4d3daa58b0cc5ccdf6520db7a5046688c155[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Feb 6 19:51:57 2025 +0530
+
+    1910
+
+[33mcommit 3c40f1f4d932b1367256766b5c44405ff85d8762[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Feb 6 10:43:36 2025 +0530
+
+    Replace Spaces Optimal approach
+
+[33mcommit 7ed513bebada3a82b880f17fe714ee8f23695e2b[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Feb 5 16:52:33 2025 +0530
+
+    sum of two number optimal solution
+
+[33mcommit 9d7f6260504300b1a469a69a1a8febcf5d15770a[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Feb 5 12:20:36 2025 +0530
+
+    867
+
+[33mcommit 103f5c29aeca4f2da38b129239f9140d85dc2ecb[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Feb 5 09:58:10 2025 +0530
+
+    88
+
+[33mcommit 3f539d4cc1e331aaba51812feb7039f2db47a934[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Feb 5 09:55:30 2025 +0530
+
+    88 and 1752
+
+[33mcommit 5e99458af378cc9fd95a073ac13c56ca38d3950c[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 3 23:28:02 2025 +0530
+
+    189
+
+[33mcommit 2227250ce5a9ae9d0c442d13b692c387cac6c822[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 3 17:40:01 2025 +0530
+
+    283
+
+[33mcommit cf9ada07b0df86164a9b8309f82b13ca7ebac920[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Feb 3 10:41:23 2025 +0530
+
+    88 with constant space Complexity
+
+[33mcommit bbe6cd6acfaa94b30a5eee5a42a84214d7244f4a[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Feb 1 18:31:56 2025 +0530
+
+    1482
+
+[33mcommit e5addfc9d1d99b7bea5ddcb0f53ccbfaf7faee83[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Fri Jan 31 19:33:03 2025 +0530
+
+    Magnetic Force
+
+[33mcommit 529e139f0ff2e1bebf8378669c77f89e3df74e1b[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Jan 30 22:55:48 2025 +0530
+
+    48
+
+[33mcommit b9710ccb9b623df297c0f76397f16434f0f873fd[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Jan 30 18:15:13 2025 +0530
+
+    Aggressive cows problem
+
+[33mcommit f7f07478cb7ddf2e64e1d08f04824078ac1791e9[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Jan 30 11:39:41 2025 +0530
+
+    2100
+
+[33mcommit 0d2481bbfa2c6af223fbe91746e9d5cf3aaa8c98[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Jan 29 21:05:24 2025 +0530
+
+    painters partition problem
+
+[33mcommit 3e4effd1bc5ac32528c30415aa4cde5b2e13c71c[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Jan 29 19:19:05 2025 +0530
+
+    book allocation problem
+
+[33mcommit 61024b30e6262b302b155e9f91e7d259493dba20[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Jan 28 14:17:35 2025 +0530
+
+    check the notes______ 81
+
+[33mcommit 68662355229339bff3a6db038486da1e3d64de86[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Mon Jan 27 12:22:11 2025 +0530
+
+    402
+
+[33mcommit f751089dea42927b6f2e822defef6bb631dfae44[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sat Jan 25 12:10:10 2025 +0530
+
+    66
+
+[33mcommit da02f1e4fac16e5999ec0db55e3e44644eec7d66[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Thu Jan 23 03:35:03 2025 +0530
+
+    75
+
+[33mcommit 0bc3248f6474dda420a43a3a25f02743f9329f3f[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Jan 22 19:10:32 2025 +0530
+
+     sort 01
+
+[33mcommit 215b686deb7494cf4f5d5f913bbab2e54a01d855[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Jan 22 13:28:41 2025 +0530
+
+    leetcode11
+
+[33mcommit ada76b5586b7399d2cc1cce53dc0ec33b73499d7[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Wed Jan 22 10:44:28 2025 +0530
+
+    27
+
+[33mcommit 7e43a05763ff4c53297e4afbc67d3740d67b92e1[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Tue Jan 21 11:39:45 2025 +0530
+
+    2091
+
+[33mcommit 3a6ab8e4b0a4f843f0c84922619e93afa01756b0[m
+Author: Bharat Jagoar <bharatjagaor15@gmail.com>
+Date:   Sun Jan 19 14:47:21 2025 +0530
+
+    just another commit !!
+
+[33mcommit facb4fa8416beffb2339a54cfa3dde2a8fa8896d[m
+Author: Bharat Jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Sep 20 00:12:27 2024 +0530
+
+    Lecture 6 binary
+
+[33mcommit 758410c5f1a945a7675648ef083d3f2c2fede279[m
+Author: Bharat Jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Sep 10 05:03:10 2024 +0530
+
+    loops in lecture 5 removing Initailization condition and increament
+
+[33mcommit 88121c27b3fc4419351b221ce490d2b46847d5d3[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sun Jun 2 08:50:36 2024 +0530
+
+    on the way to complete leetcoded 88
+
+[33mcommit 7cd4778e5e5075faf2f876e7d09d792a55889519[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sat May 25 06:00:49 2024 +0530
+
+    leetcode 88
+
+[33mcommit e457401042872fcfa5ee0f3c3a1c51a74eda068e[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri May 24 20:17:46 2024 +0530
+
+    reverse the array after that position.
+
+[33mcommit 1141d27587635d2c0eb9dee276f6b2bff19bc864[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu May 23 12:02:25 2024 +0530
+
+    leetcode 344
+
+[33mcommit cac396a98c6da9c9bdbcf8e2785f2518a8af4ad6[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 17:42:15 2024 +0530
+
+    algo inn stl
+
+[33mcommit c2b640bfcb4913b95f6de3dd65c5a3ce51c91bfa[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 16:53:19 2024 +0530
+
+    STL data structure
+
+[33mcommit 1002f4489505807511d493d695f90d54fc0ff194[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 14:49:28 2024 +0530
+
+    queue
+
+[33mcommit 233cdebab286cd900fd05cb804dc648b53b59ffc[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 14:04:15 2024 +0530
+
+    optimised insertion sort
+
+[33mcommit 47a54df9ac1423b0e7ccc14a5934a78011c43ffd[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 12:06:22 2024 +0530
+
+    insertion sort
+
+[33mcommit c849e3b33fc4d41a7938f987e1d1b1e1555ff13d[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 22 06:19:35 2024 +0530
+
+    bubble sort
+
+[33mcommit 3655ff498f54f6ffd028e46514871cee44164a7d[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue May 21 20:34:55 2024 +0530
+
+    bubble sort
+
+[33mcommit 4efcd1a6ac1df8ac831b34c4370118ef18305e10[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sat May 18 16:47:05 2024 +0530
+
+    selection sort
+
+[33mcommit d0faa599b87eb6ff309585123708368a77fac6fe[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed May 15 19:51:22 2024 +0530
+
+    book allocation binary search
+
+[33mcommit 02d371ba242b1112d655d06ca6b1993410830c67[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue May 7 22:21:46 2024 +0530
+
+    leet code 69
+
+[33mcommit fb8ffc949d8e74a8b20b483d590c417af4e188e8[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sat Apr 20 00:03:48 2024 +0530
+
+    finding pivot again
+
+[33mcommit 0dc0da2e4f924ebc57bcf0226ede2d42d0236e4a[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Apr 10 05:56:55 2024 +0530
+
+    approch to finding pivot changed
+
+[33mcommit c17755bc273bb64a3f7b29c7a7cab69bcf8c484f[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Apr 9 23:03:30 2024 +0530
+
+    problem_33
+
+[33mcommit 208582760b2555a33351a73bfb72c8c0fffac622[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Apr 9 23:02:49 2024 +0530
+
+    problem_33
+
+[33mcommit a5ebf3cff3723a94da992a80576c1641c5bc5bf9[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sat Apr 6 06:12:56 2024 +0530
+
+    finding pivot
+
+[33mcommit d2dda58c66786f52f3db86f70ed92017176fb617[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Apr 5 05:29:28 2024 +0530
+
+    problem724
+
+[33mcommit 1cc33bc10bef6e18644d84bf4de1c73a988ed495[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Apr 4 06:26:12 2024 +0530
+
+    problem 852
+
+[33mcommit 17266210a8aa5634141b78c5e1fe04cbf27fc00c[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Apr 3 06:18:38 2024 +0530
+
+    leetcode 34
+
+[33mcommit e84f89bb86e1e8c03c79b3ad64ee349f97886e55[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Apr 3 06:17:28 2024 +0530
+
+    leet code 34
+
+[33mcommit 2fb15a73ad54bdc4268fbfa6a610f13c215e8642[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 27 22:29:52 2024 +0530
+
+    binary search solution made !
+
+[33mcommit b395bb90b51c042791a0eeeb5224b9579eee1d15[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 27 19:53:04 2024 +0530
+
+    coded binary search
+
+[33mcommit 9740bd0e8c540e42997373a342d5fe8c81870a9d[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 27 06:30:28 2024 +0530
+
+    beginning of binary search !!
+
+[33mcommit dc2adec2a9e9764d95a666ca6d10ad3eb742c33f[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 27 06:29:31 2024 +0530
+
+    binary search begining
+
+[33mcommit cbd08e909ea201f206e4dd23d9aca309f0b07b0c[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sun Mar 24 18:13:56 2024 +0530
+
+    paired sum coding ninjas
+
+[33mcommit 97c990f7858e6048987b02bc05797173a3344807[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Mar 22 18:58:42 2024 +0530
+
+    opti 349
+
+[33mcommit b46941a1eadf71fa2163d81c9f1bf6e31f678bdc[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Mar 22 18:21:34 2024 +0530
+
+    subimission of 349 with bruteforce
+
+[33mcommit 53b45565d83d9a50e75cef96288bfc8f5519bbc6[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Mar 22 06:37:21 2024 +0530
+
+    intro to Sets STL
+
+[33mcommit 64ebb7b5ea0321a16ebd0a597ac5136ec80fb049[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Fri Mar 22 05:52:31 2024 +0530
+
+    completing 349
+
+[33mcommit 6a47b254296d84e2de62a991ea10e175d050e137[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 21 21:44:15 2024 +0530
+
+    finally 442
+
+[33mcommit 5aca2aef9b941d75db913cb0260ec98bfa1ceb30[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 20 22:49:29 2024 +0530
+
+    Intersection of sorted arrays problems solved !
+
+[33mcommit f523ae0f71b0ea5a2177bb4fbb2d948914f23534[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Mar 19 19:57:36 2024 +0530
+
+    problem 442
+
+[33mcommit 2e31b94b8b126c8ea987c3c1ec88ae57c85ef332[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Mar 19 19:56:53 2024 +0530
+
+    442 problem
+
+[33mcommit c962289c4ab9a038a6d8f632a8b0676d3373718d[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 14 23:20:10 2024 +0530
+
+    STL  folder shift !
+
+[33mcommit b828dfb2a4153d3afd107968967563eb3e4d23d2[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 14 23:07:48 2024 +0530
+
+    coding ninjas Duplicate in array !!
+
+[33mcommit da9cc9512df5a3916e51e364372c57618f674594[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 14 20:57:20 2024 +0530
+
+    commit out of lecture 10
+
+[33mcommit c975b46dd74cebd0b54bca753b979b040b234c01[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 14 20:42:28 2024 +0530
+
+    problem 1207
+
+[33mcommit dbb55026dea476877b56e93c56bcb72d29a0e4b1[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Thu Mar 14 20:38:05 2024 +0530
+
+    problem 1207 with array solution done
+
+[33mcommit 887543294ddcf71c2234f75e77173d97203dfdc2[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Wed Mar 13 06:51:17 2024 +0530
+
+    starting lecture 10
+
+[33mcommit 2b2ea67fd7619005c2684d9ab86bffb2afa35fbf[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Mar 12 20:09:53 2024 +0530
+
+    lecure 9 finish
+
+[33mcommit dd497e63878932299ab274023e58432dc7e8732b[m
+Merge: 22b916f feedf01
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Mon Mar 11 23:25:50 2024 +0530
+
+    Merge branch 'master' of https://github.com/jaishreeram15/Data-structure
+
+[33mcommit 22b916f44bd5eba440bb2524c43666ecaa23c32e[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Mon Mar 11 23:22:21 2024 +0530
+
+    lecture 9 part 2
+
+[33mcommit feedf0125d323f11a141bf9ca01c1cacbe1df577[m
+Author: jai shree ram <75258911+jaishreeram15@users.noreply.github.com>
+Date:   Mon Mar 11 17:17:37 2024 +0530
+
+    Update README.md
+
+[33mcommit f194d7bfdfaff7091d5656107b49497ceabde679[m
+Author: jai shree ram <75258911+jaishreeram15@users.noreply.github.com>
+Date:   Mon Mar 11 17:16:46 2024 +0530
+
+    Created README.md
+
+[33mcommit ac32773df01e5362897c2190ec23485379049666[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Mon Mar 11 06:22:08 2024 +0530
+
+    beginning of lecture 9
+
+[33mcommit 14944a61b354bf3f8222298eaa681970a07a93c4[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sun Mar 10 21:33:10 2024 +0530
+
+    lecture 8 complete
+
+[33mcommit d6374ba876f47f48d1902881f622e0c42782d03e[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sun Mar 10 10:47:33 2024 +0530
+
+    just like this commit !!
+
+[33mcommit 8bce7bd3d2de00e7010e7988a56b9b4798797c6f[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Tue Mar 5 06:54:50 2024 +0530
+
+    problem 1009 2nd solution
+
+[33mcommit 893a5641d8bdd5ab6352639af1a701c7ca24de90[m
+Author: bharat jagoar <bharatjagoar15@gmail.com>
+Date:   Sun Mar 3 05:59:28 2024 +0530
+
+    BEGIN
