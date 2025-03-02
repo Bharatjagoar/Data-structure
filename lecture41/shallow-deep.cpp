@@ -21,12 +21,17 @@ class stud{
     void print(){
         cout<<name<<endl;
     }
+
+    ~stud(){
+        cout<<"exiting "<<this->name<<endl;
+    }
 };
 
 
 
 int main(){
  
+    
     stud s1;
     char name[] = "bharat";
     // s1.setName(*name);
@@ -37,5 +42,10 @@ int main(){
     
     s1.print();
     s2.print();
+
+    stud* s3 =new stud();
+    delete s3;
+    
+
     return 0 ;
 }
