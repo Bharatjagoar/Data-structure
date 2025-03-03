@@ -30,16 +30,17 @@ vector<vector<int>> getIndecies(vector<vector<char>>board,char ch){
 }
 
 
-bool searchWord(vector<vector<char>>&board,string word,int index , int Yaxis, int Xaxis ){
+bool searchWord(vector<vector<char>>&board,string word,int index ,int Xaxis, int Yaxis  ){
     cout<<Yaxis<<"  "<<Xaxis<<endl;
+    // cout<<index<<" "<<word.length()<<endl;
 
     if(Yaxis>=board.size() || Yaxis<0 || Xaxis<0 || Xaxis>=board[0].size() || board[Yaxis][Xaxis]!=word[index]){
-        cout<<Yaxis<<"  "<<Xaxis<<endl;
-        cout<<board[Yaxis][Xaxis]<<endl;
+        // cout<<Yaxis<<"  "<<Xaxis<<endl;
+        // cout<<board[Yaxis][Xaxis]<<endl;
         return false;
     }
     if(word.length()-1==index){
-        // cout<<board[Yaxis][Xaxis] << "  " << word[index]<<endl;
+        cout<<board[Yaxis][Xaxis] << "  " << word[index]<<endl;
         return true;
     }
     char ch = board[Yaxis][Xaxis];
@@ -77,10 +78,13 @@ int main(){
         }
         cout<<endl;
     }
+    cout<<word<<endl;
     // cout<<searchWord(board,word,0,0,0)<<endl;
-
+    // cout<<"result :: "<<searchWord(board,word,0,0,0)<<endl;
     for(auto x : indieces){
-        cout<<searchWord(board,word,0,x[0],x[1])<<endl;
+        cout<<x[0]<<x[1]<<endl;
+        // cout<<searchWord(board,word,0,x[0],x[1])<<endl;
+        cout<<"result :: "<<searchWord(board,word,0, x[1],x[0])<<endl;
         if(searchWord(board,word,0,x[0],x[1])){
             return true;
         }
