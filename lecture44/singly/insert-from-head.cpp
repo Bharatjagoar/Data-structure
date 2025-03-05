@@ -25,6 +25,13 @@ void ReadLL(node* &ptr,int freq){
 }
 
 
+void print(node* ptr){
+    while (ptr!=nullptr)
+    {
+        cout<<ptr->data<<endl;
+        ptr=ptr->next;
+    }
+}
 
 
 int main(){
@@ -35,7 +42,6 @@ int main(){
     cin>>number;
 
     ReadLL(head,number);
-    cout<<head->data<<endl;
- 
+    print(head);
     return 0 ;
 } 
