@@ -14,15 +14,19 @@ class node{
 
 node* createDoublyLL(node* ptr,int size){
     node* current,*temp,*head;
+    int data;
     
-    current= new node(1);
+    cout<<"enter data :: ";
+    cin>>data;
+    current= new node(data);
     head= current;
 
 
     if(size>=2){
         for(int i = 2 ; i <=size ; i++){
-            
-            temp = new node(i);
+            cout<<"enter data :: ";
+            cin>>data;
+            temp = new node(data);
             current->next =temp;
             temp->prev = current;
             
@@ -47,50 +51,10 @@ void print(node* ptr){
 
     while (ptr!=nullptr)
     {
-        cout<<ptr->data<<endl;;
+        cout<<ptr->data;
         ptr = ptr->prev;
     }
     
-}
-
-void insertion(node * &ptr,int size){
-    node * head=ptr,*temp;
-    int pos,data;
-    cout<<"enter the position :: "<<endl;
-    cin>>pos;
-    cout<<"enter the data :: "<<endl;
-    cin>>data;
-    temp = new node(data);
-    if(pos>size || pos <1){
-        cout<<"invalid position "<<endl;
-        return;
-    }
-    int i = 1 ;
-    while (i<pos)
-    {
-        ptr=ptr->next;
-        i++;
-    }
-    cout<<"pointer dataa :: "<<ptr->data<<endl;
-    // pehle pos == 1 k lie handle karo 
-    if(i!=1){
-        ptr->prev->next=temp;
-        temp->prev=ptr->prev;
-    }else{
-        temp->next=ptr;
-        head=temp;
-    }
-    // agar pos == size hai , usse handle karo
-    if(i!=size){
-        temp->next = ptr;
-        ptr->prev=temp;
-    }else{
-        ptr->prev->next=temp;
-        temp->next=ptr;
-        
-    }
-    ptr->prev=temp;
-    ptr=head;
 }
 
 int main(){
@@ -100,10 +64,6 @@ int main(){
     cout<<"enter the size :: "<<endl;
     cin>>size;
     head = createDoublyLL(head,size);
-    print(head);
-    
-    insertion(head,size);
-    cout<<"printing after insertion ::"<<endl;
     print(head);
     // cout<<"next :: "<<tail->next->data<<endl;
     return 0 ;

@@ -21,11 +21,9 @@ node* createDoublyLL(node* ptr,int size){
 
     if(size>=2){
         for(int i = 2 ; i <=size ; i++){
-            
             temp = new node(i);
             current->next =temp;
             temp->prev = current;
-            
             if(i!=size){
                 current=current->next;
             }
@@ -47,63 +45,61 @@ void print(node* ptr){
 
     while (ptr!=nullptr)
     {
-        cout<<ptr->data<<endl;;
+        cout<<ptr->data<<endl;
         ptr = ptr->prev;
-    }
-    
+    }    
 }
 
-void insertion(node * &ptr,int size){
-    node * head=ptr,*temp;
-    int pos,data;
-    cout<<"enter the position :: "<<endl;
-    cin>>pos;
-    cout<<"enter the data :: "<<endl;
-    cin>>data;
-    temp = new node(data);
-    if(pos>size || pos <1){
-        cout<<"invalid position "<<endl;
+
+void deletion(node* &head, int pos, int size){
+    if(pos<1 || pos>size){
+        cout<<"Invalid position"<<endl;
+        return ;
+    }
+    node* temp = head;
+    if(pos == 1){
+        head=head->next;
+        delete head->prev;
+        head->prev = nullptr ;
         return;
     }
     int i = 1 ;
+
     while (i<pos)
     {
-        ptr=ptr->next;
+        head = head->next;
         i++;
     }
-    cout<<"pointer dataa :: "<<ptr->data<<endl;
-    // pehle pos == 1 k lie handle karo 
-    if(i!=1){
-        ptr->prev->next=temp;
-        temp->prev=ptr->prev;
-    }else{
-        temp->next=ptr;
+    if(i==size) {
+        cout<<"hfdsa"<<endl;
+        head=head->prev;
+        delete head->next;
+        head->next = nullptr ;
         head=temp;
+        return;
     }
-    // agar pos == size hai , usse handle karo
-    if(i!=size){
-        temp->next = ptr;
-        ptr->prev=temp;
-    }else{
-        ptr->prev->next=temp;
-        temp->next=ptr;
-        
-    }
-    ptr->prev=temp;
-    ptr=head;
+    node* temp2;
+    head=head->prev;
+    temp2=head->next->next;
+    temp2->prev=head;
+    delete head->next;
+    head->next=temp2;
+    
+    delete temp2;
+    head=temp;
+    // cout<<"data :: "<<head->data<<"  "<<i<<endl;
 }
 
 int main(){
-    
     node * head,*tail;
-    int size;
+    int size,pos;
     cout<<"enter the size :: "<<endl;
     cin>>size;
     head = createDoublyLL(head,size);
     print(head);
-    
-    insertion(head,size);
-    cout<<"printing after insertion ::"<<endl;
+    cout<<"enter position :: ";
+    cin>>pos;
+    deletion(head,pos,size);
     print(head);
     // cout<<"next :: "<<tail->next->data<<endl;
     return 0 ;
