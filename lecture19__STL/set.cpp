@@ -34,5 +34,9 @@ int main(){
 
     // if you wanna print 4 value of the set you can use advance(it,4), 0 index based !!
 
+
+    
+    auto hell =arr.insert(60);
+    cout<<hell.second<<endl;
     return 0;
 }
