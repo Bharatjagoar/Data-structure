@@ -14,7 +14,7 @@ class Node{
 };
 int main(){
 
-    Node*head=new Node();
+    Node*head=new Node(45);
  
     unordered_set<int>data;
     // cout<<"hello world "<<endl;
