@@ -173,11 +173,11 @@ Node *MergeLL(Node *first, Node *second)
 
 int main()
 {
-    int arr[] = {-1};
+    int arr[] = {200};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     Node *first = generateLinkedList(arr, size);
-    int arr2[] = {1, 4, 8, 9};
+    int arr2[] = {20};
     size = sizeof(arr2) / sizeof(arr[0]);
     Node *second = generateLinkedList(arr2, size);
     Node *head = MergeLL(first,second);
