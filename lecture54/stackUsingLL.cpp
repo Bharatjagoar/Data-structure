@@ -129,7 +129,16 @@ int main(){
     obj->push(456);
     obj->push(89);
     obj->push(6211);
-
+    obj->push(456);
+    obj->push(89);
+    obj->push(6211);
+    obj->push(456);
+    obj->push(89);
+    obj->push(6211);
+    obj->push(456);
+    obj->push(89);
+    obj->push(6211);
+    obj->peek();
     return 0 ;
 }
 
