@@ -13,46 +13,40 @@ stack<int> createStackFromArray(int arr[], int size) {
     return stk;
 }
 
-void DeleteMiddle(stack<int>&input,int size){
-    vector<int>save;
-    int i = 0;
-    if(size&1){
-        while (i<(size/2))
-        {
-            /* code */
-            save.push_back(input.top());
-            input.pop();
-            i++;
-        }
-        input.pop();
-        for(int i =save.size()-1;i>-1;i--){
-            input.push(save[i]); 
-        }
+void deletestack(stack<int>&st,int size,int count){
+    if(count == size/2){
 
+        st.pop();
+        return;
+    }
+    int data = st.top();
+    st.pop();
+    deletestack(st,size,++count);
+    st.push(data);
+}
+
+
+void DeleteMiddle(stack<int>&input,int size){
+    cout<<size<<endl;
+    cout<<input.top()<<endl;
+    int count = 1 ;
+    if(size&1){
+        size++;
+        deletestack(input,size,count);
     }else{
-        
-        while(i<(size/2)){
-            save.push_back(input.top());
-            input.pop();
-            i++;
-        }
-        input.pop();
-        for(int i =save.size()-1;i>-1;i--){
-            input.push(save[i]); 
-        }
-        
+        deletestack(input,size,count);
     }
 }
 
 
 int main() {
-    int arr[] = {1,3,4,2,7}; // Example array
+    int arr[] = {1,3,8,6,2,7}; // Example array
     int size = sizeof(arr) / sizeof(arr[0]);
     stack<int>input = createStackFromArray(arr, size);
-    size--;
+    // size--;
     DeleteMiddle(input,size);
     while(!input.empty()){
-        cout<<input.top()<<" ";
+        cout<<input.top()<<"  ";
         input.pop();
     }
 
