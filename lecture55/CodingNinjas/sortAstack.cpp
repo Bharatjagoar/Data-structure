@@ -8,13 +8,13 @@ stack<int> createStackFromArray(int arr[], int size) {
     for (int i = 0; i < size; ++i) {
         stk.push(arr[i]);
     }
-    
+    // fdsa
     return stk;
 }
 
 
 void sort(stack<int>&data){
-    
+
 }
 
 
