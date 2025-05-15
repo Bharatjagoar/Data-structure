@@ -1,21 +1,28 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
+
+
+void ReverseString(string name,stack<char>&reversed){
+    for(char i : name){
+        reversed.push(i);
+    }
+}
+
+
 int main(){
-    stack<char>Solution;
+ 
+    cout<<"hello world "<<endl;
+    stack<char>strings;
     string name = "bharat";
-    for(int i = 0 ; i < name.length();i++){
-        Solution.push(name[i]);
+
+    ReverseString(name,strings);
+    while (!strings.empty())
+    {
+        cout<<strings.top()<<endl;
+        strings.pop();
     }
     
-    string ans = "";
-    while (!Solution.empty())
-    {
-        /* code */
-        char data = Solution.top();
-        ans=ans+data;
-        Solution.pop();
-    }
-    cout<<"ans :: "<<ans<<endl;
+
     return 0 ;
 }
