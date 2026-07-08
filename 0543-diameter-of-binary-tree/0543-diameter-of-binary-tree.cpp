@@ -12,51 +12,22 @@
  */
 class Solution {
 public:
-    void gethight(TreeNode* root, int hight, int& max) {
+    pair<int, int> getdiameter(TreeNode* root) {
         if (!root)
-            return;
-        if (hight > max)
-            max = hight;
-        if (root->left) {
-            hight++;
-            gethight(root->left, hight, max);
-            hight--;
-        }
-        if (root->right) {
-            hight++;
-            gethight(root->right, hight, max);
-            hight--;
-        }
-    }
-    void getdiameter(TreeNode* root, int& maxd) {
-        int lefthight = 0;
-        int righthight = 0;
+            return {0, 0};
+        pair<int, int> data, rightdata, leftdata;
+        leftdata = getdiameter(root->left);
+        rightdata = getdiameter(root->right);
         int hight = 0;
-        int max = 0;
-        int diameter = 0;
-        if (root->left) {
-            gethight(root->left, hight, max);
-            lefthight = max + 1;
-            max = 0;
-        }
-        if (root->right) {
-            gethight(root->right,hight,max);
-            righthight = max + 1;
-            max = 0;
-        }
-        if (righthight + lefthight > maxd)
-            maxd = righthight + lefthight;
-        if (root->left) {
-            getdiameter(root->left,maxd);
-        }
-        if (root->right) {
-            getdiameter(root->right,maxd);
-        }
+        hight = max(leftdata.second, rightdata.second);
+        int diameter =  max(max(leftdata.first,rightdata.first),(leftdata.second+rightdata.second)) ;
+        hight++;
+        if(root->val == -9) cout<<diameter;
+        return {diameter, hight};
     }
     int diameterOfBinaryTree(TreeNode* root) {
-        int maxd = 0;
-        getdiameter(root,maxd);
-        return maxd;
+        pair<int, int> metrics = getdiameter(root);
+        return metrics.first;
     }
 };
 
