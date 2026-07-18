@@ -15,46 +15,47 @@ class Node {
 
 class Solution {
 	public:
-	void rightbound(Node*root, int max, vector<int>&rightboundary, int axis) {
-		if (!root)
-			return;
-		if (axis > max) {
-			rightboundary.push_back(root->data);
-			max++;
+	void bfs(Node*root, vector<vector<pair<Node*, int>>>&arr) {
+		int axis = 0;
+		queue<pair<Node*, int>> q; // first will represent the data second will represent the axis
+		q.push({root, axis});
+		q.push({nullptr, -1});
+		vector<pair<Node*, int>> sol;
+		while (!q.empty()) {
+			pair<Node*, int>p = q.front();
+			q.pop();
+			if (p.first == nullptr) {
+				
+				arr.push_back(sol);
+				sol.clear();
+				if (!q.empty())
+					q.push({nullptr, -1});
+			} else {
+				if ((p.first)->left)
+					q.push({(p.first)->left, (p.second) - 1});
+				if ((p.first)->right)
+					q.push({(p.first)->right, (p.second) + 1});
+				sol.push_back(p);
+			}
 		}
-		if (root->left)
-			rightbound(root->left, max, rightboundary, axis - 1);
-		if (root->right)
-			rightbound(root->right, max, rightboundary, axis + 1);
-	}
-	
-	void leftbound(Node*root, int min, vector<int>&leftboundary, int axis) {
-		if (!root)
-			return;
-		if (axis < min) {
-			leftboundary.push_back(root->data);
-			min--;
-		}
-		if (root->left)
-			leftbound(root->left, min, leftboundary, axis - 1);
-		if (root->right)
-			leftbound(root->right, min, leftboundary, axis + 1);
 	}
 	vector<int> topView(Node *root) {
 		// code here
-		vector<int>left;
-		vector<int>right;
-		int min = 0;
-		int max = 0;
-		leftbound(root,min,left,0);
-		rightbound(root,max,right,0);
-		cout<<endl;
-		for(int x : left) cout<<x<<endl;
-		cout<<endl;
-		cout<<endl;
-		for(int x : right) cout<<x<<endl;
-		cout<<endl;
-		return left;
+		vector<vector<pair<Node*,int>>>makepair;
+		map<int , int >check;
+		bfs(root,makepair);
+		for(auto x : makepair){
+		    for(auto y : x){
+		        if(check.find(y.second) == check.end() ){
+		            check[y.second] = (y.first)->data;
+		        }
+		    }
+		}
+		vector<int>sol;
+		for(auto p :check){
+		    sol.push_back(p.second);
+		}
+		return sol;
 	}
 };
 
