@@ -18,8 +18,7 @@ class Solution {
 	void dfs(Node*root, map<int, vector<Node*>> &hashmap, int num1, int num2, vector<Node*>&path, bool & n1, bool &n2) {
 		if (!root)
 			return;
-		if (n1 && n2)
-			return;
+		
 		if (root->data == num1) {
 			path.push_back(root);
 			hashmap[num1] = path;
@@ -33,6 +32,8 @@ class Solution {
 			path.pop_back();
 			
 		}
+		if (n1 && n2)
+			return;
 		
 		path.push_back(root);
 		dfs(root->left, hashmap, num1, num2, path, n1, n2);
