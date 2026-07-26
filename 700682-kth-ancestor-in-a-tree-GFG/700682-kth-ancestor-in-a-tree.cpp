@@ -14,37 +14,31 @@ class Node {
 
 class Solution {
 	public:
-	void dfs(Node*root, vector<int>&arr, int node, bool found, vector<int>&permanent) {
-		if (!root || found)
-			return ;
-		arr.push_back(root->data);
-		
+	void dfs(Node*root, int k, int node, int&hight, int& ans) {
+		if (hight>-1 || !root)
+			return;
 		if (root->data == node) {
-			found = true;
-			permanent = arr;
-			return ;
+			hight = 1;
+			return;
 		}
-		dfs(root->left, arr, node, found, permanent);
-		dfs(root->right, arr, node, found, permanent);
-		arr.pop_back();
+		
+		dfs(root->left, k, node, hight, ans);
+		dfs(root->right, k, node, hight, ans);
+// 		cout << hight<<"\t"<<root->data << endl;
+		if (hight == k) {
+			
+			ans = root->data;
+		}
+		if (hight>-1)
+			hight++;
 	}
 	int kthAncestor(Node *root, int k, int node) {
-		// code he1
-		vector<int>arr;
-		vector<int>p;
-		bool found = false;
-		dfs(root, arr, node, found, p);
-		int size = p.size();
-		if (p.size() <= k) {
-			return - 1;
-		}
-
-		for (int i = 0 ; i < k ; i++) {
-			
-			p.pop_back();
-		}
-		size = p.size();
-		return p[size - 1];
+		// code here
+		int ans = -1;
+		int hight = -1;
+		dfs(root, k, node, hight, ans);
+		
+		return ans;
 	}
 };
 
