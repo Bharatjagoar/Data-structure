@@ -36,11 +36,6 @@ public:
         heapify(nums);
         heapsort(nums);
         int size= nums.size();
-        cout << endl;
-        for (int i : nums) {
-            cout << i << "\t";
-        }
-        cout << endl;
 
         return nums[size-k];
     }
